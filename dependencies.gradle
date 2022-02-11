@@ -1,0 +1,20 @@
+apply from: 'version.gradle'
+
+ext {
+    androidVersionCode = generateVersionCode()
+    androidVersionName = generateVersionName()
+    hiltVersion = "2.38.1"
+}
+
+def generateVersionCode() {
+    return project.majorVersion * 1000000 +
+            project.minorVersion * 1000 +
+            project.patchVersion
+}
+
+def generateVersionName() {
+    return "${project.majorVersion}." +
+            "${project.minorVersion}." +
+            "${project.patchVersion}"
+}
+

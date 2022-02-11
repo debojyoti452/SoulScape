@@ -5,6 +5,7 @@ pluginManagement {
         mavenCentral()
     }
 }
+
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
     repositories {
@@ -13,6 +14,7 @@ dependencyResolutionManagement {
         maven { url "https://jitpack.io" }
     }
 }
+
 rootProject.name = "SoulScape"
 include ':app'
 include ':common'
