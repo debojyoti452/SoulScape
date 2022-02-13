@@ -5,7 +5,7 @@ ext {
     androidVersionName = generateVersionName()
 
     kotlinVersion = "1.6.10"
-    androidKTxVersion = "1.6.0"
+    androidKTXVersion = "1.6.0"
     lifecycleVersion = "2.2.0"
     daggerCompilerVersion = "2.38.1"
     coroutinesVersion = "1.4.2"
@@ -23,7 +23,7 @@ ext {
 
     appDependencies = [
             kotlin           : "org.jetbrains.kotlin:kotlin-stdlib:${kotlinVersion}",
-            kotlinKtx        : "androidx.core:core-ktx:${androidKTxVersion}",
+            kotlinKtx        : "androidx.core:core-ktx:${androidKTXVersion}",
             liveData         : "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleVersion",
             viewModel        : "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion",
             coroutines       : "org.jetbrains.kotlinx:kotlinx-coroutines-core:${coroutinesVersion}",
@@ -35,7 +35,7 @@ ext {
     ]
 
     uiDependencies = [
-            material : "com.google.android.material:material:${materialVersion}",
+            material          : "com.google.android.material:material:${materialVersion}",
             navigationFragment: "androidx.navigation:navigation-fragment-ktx:${navigationVersion}",
             navigationUI      : "androidx.navigation:navigation-ui-ktx:${navigationVersion}",
     ]
