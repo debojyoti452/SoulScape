@@ -5,6 +5,8 @@
       <map>
         <entry key="..\:/AndroidProject/Personal/SoulScape/app/src/main/res/layout/activity_flash.xml" value="0.18" />
         <entry key="..\:/AndroidProject/Personal/SoulScape/app/src/main/res/layout/activity_splash.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/Personal/SoulScape/app/src/main/res/layout/fragment_get_started.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/Personal/SoulScape/app/src/main/res/layout/fragment_splash.xml" value="0.1" />
       </map>
     </option>
   </component>

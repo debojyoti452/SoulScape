@@ -8,8 +8,11 @@ abstract class BaseActivity : AppCompatActivity(), BaseInterface {
 
     open fun vmObserver() {}
 
+    abstract fun initialize()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        initialize()
         vmObserver()
     }
 
