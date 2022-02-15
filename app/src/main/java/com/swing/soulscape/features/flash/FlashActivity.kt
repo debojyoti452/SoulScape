@@ -1,10 +1,10 @@
-package com.swing.soulscape.features.splash
+package com.swing.soulscape.features.flash
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.swing.soulscape.R
+import com.swing.soulscape.base.BaseActivity
 
-class FlashActivity : AppCompatActivity() {
+class FlashActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_flash)

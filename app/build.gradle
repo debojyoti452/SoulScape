@@ -43,6 +43,21 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    lintOptions {
+        lintConfig file("lint.xml")
+        disable "IncompatibleIidVersion"
+        abortOnError false
+    }
+
+    testOptions.unitTests {
+        includeAndroidResources = true
+        returnDefaultValues = true
+    }
 }
 
 dependencies {
@@ -69,6 +84,7 @@ dependencies {
             ext.appDependencies.coroutines,
             ext.appDependencies.coroutinesAndroid,
             ext.appDependencies.daggerHiltAndroid,
+            ext.appDependencies.timber,
 
             ext.uiDependencies.material,
             ext.uiDependencies.navigationFragment,

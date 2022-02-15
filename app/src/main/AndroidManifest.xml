@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SoulScape">
         <activity
-            android:name=".features.splash.FlashActivity"
+            android:name=".features.flash.FlashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
