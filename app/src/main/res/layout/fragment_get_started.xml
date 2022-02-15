@@ -22,30 +22,45 @@
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
-        <androidx.appcompat.widget.AppCompatImageView
+        <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_get_started_logo" />
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_get_started_logo" />
+
+            <include
+                android:id="@+id/innerLogoGetStarted"
+                layout="@layout/logo_layout"
+                android:layout_width="@dimen/dp60"
+                android:layout_height="@dimen/dp60"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/startUrJourneyBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dp30"
             android:background="@drawable/transparent_button_state"
             android:text="@string/start_your_journey"
             android:textAllCaps="false"
-            android:textSize="@dimen/sp11"
-            android:textColor="@color/orange_color" />
+            android:textColor="@color/orange_color"
+            android:textSize="@dimen/sp12" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/iAlreadyHaveBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dp15"
             android:background="@drawable/white_button_state"
             android:text="@string/i_already_have_an_account"
             android:textAllCaps="false"
-            android:textSize="@dimen/sp11"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp12" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 

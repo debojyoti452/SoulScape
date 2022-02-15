@@ -8,7 +8,7 @@ import androidx.navigation.fragment.NavHostFragment
 import com.swing.soulscape.R
 import com.swing.soulscape.base.BaseActivity
 import com.swing.soulscape.databinding.ActivityFlashBinding
-import com.swing.soulscape.features.flash.view_model.FlashViewModel
+import com.swing.soulscape.features.flash.viewmodel.FlashViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch

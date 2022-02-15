@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SoulScape">
         <activity
+            android:name=".features.auth.AuthActivity"
+            android:exported="false" />
+        <activity
             android:name=".features.flash.FlashActivity"
             android:exported="true">
             <intent-filter>

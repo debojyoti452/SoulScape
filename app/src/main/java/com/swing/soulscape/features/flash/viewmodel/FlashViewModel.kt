@@ -1,4 +1,4 @@
-package com.swing.soulscape.features.flash.view_model
+package com.swing.soulscape.features.flash.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

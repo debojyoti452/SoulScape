@@ -5,6 +5,7 @@
       <map>
         <entry key="..\:/AndroidProject/Personal/SoulScape/app/src/main/res/drawable-xhdpi/transparent_button_disabled.xml" value="0.1" />
         <entry key="..\:/AndroidProject/Personal/SoulScape/app/src/main/res/drawable-xhdpi/white_button_enabled.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/Personal/SoulScape/app/src/main/res/drawable/ic_main_logo.xml" value="0.157" />
         <entry key="..\:/AndroidProject/Personal/SoulScape/app/src/main/res/drawable/transparent_button.xml" value="0.1" />
         <entry key="..\:/AndroidProject/Personal/SoulScape/app/src/main/res/drawable/transparent_button_disabled.xml" value="0.1" />
         <entry key="..\:/AndroidProject/Personal/SoulScape/app/src/main/res/drawable/transparent_button_enabled.xml" value="0.1" />
@@ -12,10 +13,13 @@
         <entry key="..\:/AndroidProject/Personal/SoulScape/app/src/main/res/drawable/white_button_disabled.xml" value="0.1" />
         <entry key="..\:/AndroidProject/Personal/SoulScape/app/src/main/res/drawable/white_button_enabled.xml" value="0.1" />
         <entry key="..\:/AndroidProject/Personal/SoulScape/app/src/main/res/drawable/white_button_state.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/Personal/SoulScape/app/src/main/res/layout/activity_auth.xml" value="0.1" />
         <entry key="..\:/AndroidProject/Personal/SoulScape/app/src/main/res/layout/activity_flash.xml" value="0.18" />
         <entry key="..\:/AndroidProject/Personal/SoulScape/app/src/main/res/layout/activity_splash.xml" value="0.1" />
-        <entry key="..\:/AndroidProject/Personal/SoulScape/app/src/main/res/layout/fragment_get_started.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/Personal/SoulScape/app/src/main/res/layout/fragment_get_started.xml" value="0.2" />
+        <entry key="..\:/AndroidProject/Personal/SoulScape/app/src/main/res/layout/fragment_signup.xml" value="0.1" />
         <entry key="..\:/AndroidProject/Personal/SoulScape/app/src/main/res/layout/fragment_splash.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/Personal/SoulScape/app/src/main/res/layout/logo_layout.xml" value="0.25" />
       </map>
     </option>
   </component>
