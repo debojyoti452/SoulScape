@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
 }
 
 android {
@@ -41,7 +43,6 @@ dependencies {
 
     implementation(
             ext.remoteDependencies.roomDatabase,
-            ext.remoteDependencies.roomAnnotationProcessor,
             ext.appDependencies.daggerHiltAndroid,
             ext.appDependencies.kotlinKtx,
             ext.appDependencies.coroutines,
@@ -50,5 +51,14 @@ dependencies {
             project(":common"),
             project(":data"),
             project(":domain"),
+    )
+
+    kapt(
+            ext.appDependencies.daggerXcompiler,
+            ext.appDependencies.daggerCompiler
+    )
+
+    annotationProcessor(
+            ext.remoteDependencies.roomAnnotationProcessor,
     )
 }
