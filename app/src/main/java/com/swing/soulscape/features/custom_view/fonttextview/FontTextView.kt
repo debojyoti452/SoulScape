@@ -53,6 +53,7 @@ open class FontTextView : AppCompatTextView {
         if (fontName != "-1") {
             typeface = TypeFaces.get(context, fontName)
         }
+//        setTextAppearance(R.style.BaseTextViewTheme)
     }
 
     override fun setText(text: CharSequence?, type: BufferType?) {
@@ -66,11 +67,11 @@ open class FontTextView : AppCompatTextView {
 
     private fun htmlParse(text: CharSequence?): Spanned {
         return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-            Html.fromHtml(text.toString(), Html.FROM_HTML_MODE_LEGACY)
+            Html.fromHtml(text.toString(), Html.FROM_HTML_MODE_COMPACT)
         } else {
             HtmlCompat.fromHtml(
                 text.toString(),
-                HtmlCompat.FROM_HTML_MODE_LEGACY
+                HtmlCompat.FROM_HTML_MODE_COMPACT
             )
         }
     }

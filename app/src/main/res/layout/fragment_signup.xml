@@ -20,9 +20,56 @@
         android:id="@+id/welcomeTagTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
         android:text="@string/welcome_to_soulscape"
+        android:textColor="@color/base_color"
         android:textSize="@dimen/sp24"
         app:fontFamily="@font/lato_black" />
 
+    <com.swing.soulscape.features.custom_view.fonttextview.FontTextView
+        style="@style/BaseTextViewTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/personalise_your_journey_by_signing_up"
+        android:textSize="@dimen/sp13" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp28"
+        android:background="@drawable/input_field_box_light"
+        android:hint="@string/full_name"
+        android:paddingLeft="@dimen/dp16"
+        android:paddingTop="@dimen/dp14"
+        android:paddingRight="@dimen/dp16"
+        android:paddingBottom="@dimen/dp14"
+        android:textColorHint="@color/crimson_dark_bg"
+        android:textCursorDrawable="@drawable/input_cursor" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@drawable/input_field_box_light"
+        android:hint="@string/email_id"
+        android:paddingLeft="@dimen/dp16"
+        android:paddingTop="@dimen/dp14"
+        android:paddingRight="@dimen/dp16"
+        android:paddingBottom="@dimen/dp14"
+        android:textColorHint="@color/crimson_dark_bg"
+        android:textCursorDrawable="@drawable/input_cursor" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@drawable/input_field_box_light"
+        android:hint="@string/password_min_8_characters"
+        android:paddingLeft="@dimen/dp16"
+        android:paddingTop="@dimen/dp14"
+        android:paddingRight="@dimen/dp16"
+        android:paddingBottom="@dimen/dp14"
+        android:textColorHint="@color/crimson_dark_bg"
+        android:textCursorDrawable="@drawable/input_cursor" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>
