@@ -1,2 +1,2 @@
 # SoulScape
-A Swing Technologies Product.
+A Open-Source Product.
