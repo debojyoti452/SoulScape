@@ -12,7 +12,10 @@
         tools:layout="@layout/fragment_splash" >
         <action
             android:id="@+id/action_splashFragment_to_getStartedFragment"
-            app:destination="@id/getStartedFragment" />
+            app:destination="@id/getStartedFragment"
+            app:exitAnim="@anim/nav_default_enter_anim"
+            app:launchSingleTop="true"
+            app:popUpToInclusive="true"/>
     </fragment>
 
     <fragment

@@ -23,6 +23,10 @@ class SplashFragment : BaseFragment<FragmentSplashBinding>() {
 
     }
 
+    override fun onDeviceBack() {
+        requireActivity().finish()
+    }
+
     override fun inflateView(
         inflater: LayoutInflater,
         container: ViewGroup?

@@ -3,6 +3,9 @@ apply from: 'version.gradle'
 ext {
     androidVersionCode = generateVersionCode()
     androidVersionName = generateVersionName()
+    androidTargetSDK = 32
+    androidMinSDK = 23
+    androidCompileSDK = 32
 
     kotlinVersion = "1.6.10"
     androidKTXVersion = "1.7.0"

@@ -18,7 +18,12 @@ plugins {
     id "io.gitlab.arturbosch.detekt" version "1.18.1"
 }
 
+apply plugin: 'org.owasp.dependencycheck'
 apply from: 'dependencies.gradle'
+
+allprojects {
+    apply from: "$rootDir/script-detekt.gradle"
+}
 
 task clean(type: Delete) {
     delete rootProject.buildDir

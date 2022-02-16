@@ -1,0 +1,31 @@
+complexity:
+  TooManyFunctions:
+    thresholdInFiles: 20
+    thresholdInClasses: 40
+    thresholdInInterfaces: 30
+    thresholdInObjects: 30
+    thresholdInEnums: 20
+  LongMethod:
+    threshold: 80
+  LongParameterList:
+    constructorThreshold : 20
+  NestedBlockDepth:
+    threshold: 6
+
+empty-blocks:
+
+  EmptyFunctionBlock:
+    active: true
+    ignoreOverridden: true
+
+exceptions:
+  ThrowingExceptionsWithoutMessageOrCause:
+    active: true
+
+style:
+  ForbiddenComment:
+    active: false
+  WildcardImport:
+    active: false
+  MagicNumber:
+    active: true

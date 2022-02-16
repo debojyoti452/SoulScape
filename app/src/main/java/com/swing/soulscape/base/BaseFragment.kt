@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.activity.OnBackPressedCallback
 import androidx.fragment.app.Fragment
 import androidx.viewbinding.ViewBinding
 import timber.log.Timber
@@ -15,6 +16,8 @@ abstract class BaseFragment<T : ViewBinding> : Fragment(), BaseInterface {
     val binding get() = _binding!!
 
     abstract fun vmObserver()
+
+    abstract fun onDeviceBack()
 
     abstract fun inflateView(inflater: LayoutInflater, container: ViewGroup?) : T
 
@@ -30,6 +33,16 @@ abstract class BaseFragment<T : ViewBinding> : Fragment(), BaseInterface {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         vmObserver()
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        requireActivity().onBackPressedDispatcher.addCallback(
+            this, object : OnBackPressedCallback(true) {
+                override fun handleOnBackPressed() {
+                    onDeviceBack()
+                }
+            })
     }
 
     override fun onDestroyView() {
