@@ -7,4 +7,7 @@
     <string name="full_name"><font size="14">Full Name</font></string>
     <string name="email_id"><font size="14">Email ID</font></string>
     <string name="password_min_8_characters"><font size="14">Password (min 8 characters)</font></string>
+    <string name="i_agree_to_the_terms_conditions_and_privacy_policy_of_soulscape"><![CDATA[I agree to the Terms & Conditions and Privacy Policy of SoulScape.]]></string>
+    <string name="create_account">Create Account</string>
+    <string name="reply">Reply</string>
 </resources>

@@ -45,6 +45,7 @@ dependencies {
 
     implementation(
             ext.remoteDependencies.roomDatabase,
+            ext.remoteDependencies.gson,
             ext.appDependencies.daggerHiltAndroid,
             ext.appDependencies.kotlinKtx,
             ext.appDependencies.coroutines,
@@ -57,10 +58,7 @@ dependencies {
 
     kapt(
             ext.appDependencies.daggerXcompiler,
-            ext.appDependencies.daggerCompiler
-    )
-
-    annotationProcessor(
+            ext.appDependencies.daggerCompiler,
             ext.remoteDependencies.roomAnnotationProcessor,
     )
 }

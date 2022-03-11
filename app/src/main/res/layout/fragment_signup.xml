@@ -72,4 +72,25 @@
         android:textColorHint="@color/crimson_dark_bg"
         android:textCursorDrawable="@drawable/input_cursor" />
 
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sp24"
+        android:buttonTint="@color/crimson_dark_bg"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:checked="false"
+        android:text="@string/i_agree_to_the_terms_conditions_and_privacy_policy_of_soulscape" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sp24"
+        android:background="@drawable/white_button_state"
+        android:backgroundTint="@color/base_color"
+        android:text="@string/create_account"
+        android:textAllCaps="false"
+        android:layout_marginStart="@dimen/dp54"
+        android:layout_marginEnd="@dimen/dp54"
+        android:textColor="@color/white" />
+
 </androidx.appcompat.widget.LinearLayoutCompat>

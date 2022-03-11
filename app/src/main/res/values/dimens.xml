@@ -22,6 +22,7 @@
     <dimen name="dp20">20dp</dimen>
     <dimen name="dp28">28dp</dimen>
     <dimen name="dp30">30dp</dimen>
+    <dimen name="dp54">54dp</dimen>
     <dimen name="dp60">60dp</dimen>
     <dimen name="dp72">72dp</dimen>
 
