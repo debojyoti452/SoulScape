@@ -1,5 +1,6 @@
 package com.swing.soulscape.features.auth.view
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,6 +10,7 @@ import com.swing.soulscape.R
 import com.swing.soulscape.base.BaseFragment
 import com.swing.soulscape.databinding.FragmentSignupBinding
 import com.swing.soulscape.features.auth.viewmodel.SignUpViewModel
+import com.swing.soulscape.features.prefer.PreferActivity
 import com.swing.soulscape.utils.Extensions.ripple
 
 class SignUpFragment : BaseFragment<FragmentSignupBinding>(), View.OnClickListener {
@@ -24,6 +26,8 @@ class SignUpFragment : BaseFragment<FragmentSignupBinding>(), View.OnClickListen
         binding.signBackBtn.ripple()
         binding.signBackBtn.setOnClickListener(this)
         binding.welcomeTagTV.setHtml(getString(R.string.welcome_to_soulscape))
+
+        binding.createAccountBtn.setOnClickListener(this)
     }
 
     override fun vmObserver() {
@@ -34,6 +38,14 @@ class SignUpFragment : BaseFragment<FragmentSignupBinding>(), View.OnClickListen
         when (p0?.id) {
             R.id.signBackBtn -> {
 
+            }
+            R.id.createAccountBtn -> {
+                requireActivity().startActivity(
+                    Intent(
+                        requireContext(),
+                        PreferActivity::class.java
+                    ),
+                )
             }
         }
     }

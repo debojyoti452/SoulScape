@@ -1,6 +1,5 @@
 package com.swing.soulscape.features.auth.viewmodel
 
-import androidx.lifecycle.ViewModel
+import com.swing.soulscape.base.BaseViewModel
 
-class SignUpViewModel : ViewModel(){
-}
+class SignUpViewModel : BaseViewModel<SignUpViewModel>()

@@ -2,12 +2,12 @@ package com.swing.soulscape.features.flash.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
+import com.swing.soulscape.base.BaseViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
 @HiltViewModel
-class FlashViewModel @Inject constructor() : ViewModel() {
+class FlashViewModel @Inject constructor() : BaseViewModel<FlashViewModel>() {
 
     private val _splashScreen = MutableLiveData(false)
     val splashScreenTrans: LiveData<Boolean> = _splashScreen
