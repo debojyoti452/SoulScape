@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="26dp">
+    android:paddingStart="26dp"
+    android:paddingTop="26dp"
+    android:paddingEnd="26dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -33,6 +36,24 @@
 
     </RelativeLayout>
 
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/BaseTextViewTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_one_for_now" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/HeaderText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp14"
+        android:text="@string/i_want_to" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/itemListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_prefer_button_view" />
 
 
 </androidx.appcompat.widget.LinearLayoutCompat>

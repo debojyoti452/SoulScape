@@ -11,4 +11,6 @@
     <string name="create_account">Create Account</string>
     <string name="reply">Reply</string>
     <string name="what_s_on_your_mind">What\'s on your\nmind ?</string>
+    <string name="select_one_for_now">Select one for now</string>
+    <string name="i_want_to">I want to…</string>
 </resources>

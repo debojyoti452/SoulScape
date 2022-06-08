@@ -12,6 +12,7 @@
         <entry key="..\:/AndroidProject/Personal/SoulScape/app/src/main/res/drawable/ic_main_logo.xml" value="0.157" />
         <entry key="..\:/AndroidProject/Personal/SoulScape/app/src/main/res/drawable/input_cursor.xml" value="0.1" />
         <entry key="..\:/AndroidProject/Personal/SoulScape/app/src/main/res/drawable/input_field_box_light.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/Personal/SoulScape/app/src/main/res/drawable/rounded_button.xml" value="0.1" />
         <entry key="..\:/AndroidProject/Personal/SoulScape/app/src/main/res/drawable/transparent_button.xml" value="0.1" />
         <entry key="..\:/AndroidProject/Personal/SoulScape/app/src/main/res/drawable/transparent_button_disabled.xml" value="0.1" />
         <entry key="..\:/AndroidProject/Personal/SoulScape/app/src/main/res/drawable/transparent_button_enabled.xml" value="0.1" />
@@ -27,6 +28,8 @@
         <entry key="..\:/AndroidProject/Personal/SoulScape/app/src/main/res/layout/fragment_prefer.xml" value="0.33" />
         <entry key="..\:/AndroidProject/Personal/SoulScape/app/src/main/res/layout/fragment_signup.xml" value="0.22" />
         <entry key="..\:/AndroidProject/Personal/SoulScape/app/src/main/res/layout/fragment_splash.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/Personal/SoulScape/app/src/main/res/layout/item_prefer_buttom.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/Personal/SoulScape/app/src/main/res/layout/item_prefer_button_view.xml" value="0.22" />
         <entry key="..\:/AndroidProject/Personal/SoulScape/app/src/main/res/layout/item_prefer_image_view.xml" value="0.1" />
         <entry key="..\:/AndroidProject/Personal/SoulScape/app/src/main/res/layout/logo_layout.xml" value="0.25" />
       </map>
