@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/dp20"
+    android:paddingTop="@dimen/sp24"
+    android:paddingEnd="@dimen/dp20"
+    tools:context=".features.auth.view.SignUpFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/signBackBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/circle_back_btn" />
+
+    <com.swing.soulscape.features.custom_view.fonttextview.FontTextView
+        android:id="@+id/welcomeTagTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:text="@string/welcome_to_soulscape"
+        android:textColor="@color/base_color"
+        android:textSize="@dimen/sp24"
+        app:fontFamily="@font/lato_black" />
+
+    <com.swing.soulscape.features.custom_view.fonttextview.FontTextView
+        style="@style/BaseTextViewTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/personalise_your_journey_by_signing_up"
+        android:textSize="@dimen/sp13" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp28"
+        android:background="@drawable/input_field_box_light"
+        android:hint="@string/full_name"
+        android:paddingLeft="@dimen/dp16"
+        android:paddingTop="@dimen/dp14"
+        android:paddingRight="@dimen/dp16"
+        android:paddingBottom="@dimen/dp14"
+        android:textColorHint="@color/crimson_dark_bg"
+        android:textCursorDrawable="@drawable/input_cursor" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@drawable/input_field_box_light"
+        android:hint="@string/email_id"
+        android:paddingLeft="@dimen/dp16"
+        android:paddingTop="@dimen/dp14"
+        android:paddingRight="@dimen/dp16"
+        android:paddingBottom="@dimen/dp14"
+        android:textColorHint="@color/crimson_dark_bg"
+        android:textCursorDrawable="@drawable/input_cursor" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@drawable/input_field_box_light"
+        android:hint="@string/password_min_8_characters"
+        android:paddingLeft="@dimen/dp16"
+        android:paddingTop="@dimen/dp14"
+        android:paddingRight="@dimen/dp16"
+        android:paddingBottom="@dimen/dp14"
+        android:textColorHint="@color/crimson_dark_bg"
+        android:textCursorDrawable="@drawable/input_cursor" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sp24"
+        android:buttonTint="@color/crimson_dark_bg"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:checked="false"
+        android:text="@string/i_agree_to_the_terms_conditions_and_privacy_policy_of_soulscape" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/createAccountBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp54"
+        android:layout_marginTop="@dimen/sp24"
+        android:layout_marginEnd="@dimen/dp54"
+        android:background="@drawable/white_button_state"
+        android:backgroundTint="@color/base_color"
+        android:text="@string/create_account"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

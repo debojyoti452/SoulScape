@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.swing.soulscape">
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:name=".base.SoulScapeApplication"
@@ -10,6 +13,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SoulScape">
+        <activity
+            android:name=".features.prefer.PreferActivity"
+            android:exported="false" />
+        <activity
+            android:name=".features.auth.AuthActivity"
+            android:exported="false" />
         <activity
             android:name=".features.flash.FlashActivity"
             android:exported="true">
@@ -28,6 +37,26 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name=".service.FirebaseNotificationService"
+            android:directBootAware="true"
+            android:exported="false"
+            tools:targetApi="n">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".service.NotificationReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/app_name" />
+
     </application>
 
 </manifest>

@@ -6,11 +6,13 @@ plugins {
 }
 
 android {
-    compileSdk 32
+    def globalConfiguration = rootProject.extensions.getByName("ext")
+
+    compileSdk globalConfiguration["androidCompileSDK"]
 
     defaultConfig {
-        minSdk 21
-        targetSdk 32
+        minSdk globalConfiguration["androidMinSDK"]
+        targetSdk globalConfiguration["androidCompileSDK"]
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -43,6 +45,7 @@ dependencies {
 
     implementation(
             ext.remoteDependencies.roomDatabase,
+            ext.remoteDependencies.gson,
             ext.appDependencies.daggerHiltAndroid,
             ext.appDependencies.kotlinKtx,
             ext.appDependencies.coroutines,
@@ -55,10 +58,7 @@ dependencies {
 
     kapt(
             ext.appDependencies.daggerXcompiler,
-            ext.appDependencies.daggerCompiler
-    )
-
-    annotationProcessor(
+            ext.appDependencies.daggerCompiler,
             ext.remoteDependencies.roomAnnotationProcessor,
     )
 }

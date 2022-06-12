@@ -1,5 +1,6 @@
 package com.swing.soulscape.features.flash
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.lifecycle.lifecycleScope
@@ -8,7 +9,8 @@ import androidx.navigation.fragment.NavHostFragment
 import com.swing.soulscape.R
 import com.swing.soulscape.base.BaseActivity
 import com.swing.soulscape.databinding.ActivityFlashBinding
-import com.swing.soulscape.features.flash.view_model.FlashViewModel
+import com.swing.soulscape.features.flash.viewmodel.FlashViewModel
+import com.swing.soulscape.features.prefer.PreferActivity
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -39,8 +41,10 @@ class FlashActivity : BaseActivity() {
     override fun vmObserver() {
         flashViewModel.splashScreenTrans.observe(this@FlashActivity) {
             if (it == true) {
-                navController
-                    ?.navigate(R.id.action_splashFragment_to_getStartedFragment)
+                startActivity(Intent(this, PreferActivity::class.java))
+                finish()
+//                navController
+//                    ?.navigate(R.id.action_splashFragment_to_getStartedFragment)
             }
             showLog(it)
         }

@@ -3,6 +3,9 @@ apply from: 'version.gradle'
 ext {
     androidVersionCode = generateVersionCode()
     androidVersionName = generateVersionName()
+    androidTargetSDK = 32
+    androidMinSDK = 23
+    androidCompileSDK = 32
 
     kotlinVersion = "1.6.10"
     androidKTXVersion = "1.7.0"
@@ -15,6 +18,8 @@ ext {
     navigationVersion = "2.3.5"
     fragmentVersion = "1.3.6"
     javaInjectVersion = 1
+    gsonVersion = "2.9.0"
+    dataStoreVersion = "1.0.0"
 
     //test dependencies version
     junitVersion = "4.13.2"
@@ -45,6 +50,8 @@ ext {
     remoteDependencies = [
             roomDatabase           : "androidx.room:room-runtime:$roomVersion",
             roomAnnotationProcessor: "androidx.room:room-compiler:$roomVersion",
+            gson                   : "com.google.code.gson:gson:${gsonVersion}",
+            dataStore              : "androidx.datastore:datastore-preferences:${dataStoreVersion}",
     ]
 
     testDependencies = [

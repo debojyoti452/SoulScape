@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BaseTextViewTheme">
+        <item name="fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/sp12</item>
+    </style>
+
+    <style name="HeaderText" parent="BaseTextViewTheme">
+        <item name="android:textSize">@dimen/sp24</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="fontFamily">@font/lato_black</item>
+    </style>
+</resources>

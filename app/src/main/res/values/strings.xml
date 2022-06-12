@@ -2,4 +2,15 @@
     <string name="app_name">SoulScape</string>
     <string name="start_your_journey">Start your journey</string>
     <string name="i_already_have_an_account">I already have an account</string>
+    <string name="welcome_to_soulscape"><![CDATA[<span style="display:inline-block; color="#ffffff""><h1>Welcome to</h1></span>SoulScape]]></string>
+    <string name="personalise_your_journey_by_signing_up">Personalise your journey by signing up</string>
+    <string name="full_name"><font size="14">Full Name</font></string>
+    <string name="email_id"><font size="14">Email ID</font></string>
+    <string name="password_min_8_characters"><font size="14">Password (min 8 characters)</font></string>
+    <string name="i_agree_to_the_terms_conditions_and_privacy_policy_of_soulscape"><![CDATA[I agree to the Terms & Conditions and Privacy Policy of SoulScape.]]></string>
+    <string name="create_account">Create Account</string>
+    <string name="reply">Reply</string>
+    <string name="what_s_on_your_mind">What\'s on your\nmind ?</string>
+    <string name="select_one_for_now">Select one for now</string>
+    <string name="i_want_to">I want to…</string>
 </resources>

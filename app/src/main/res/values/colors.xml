@@ -13,4 +13,7 @@
     <color name="base_bg_color">#FFF6EF</color>
     <color name="orange_color">#EB8C39</color>
     <color name="orange_disabled_color">#77EB8C39</color>
+    <color name="crimson_bg">#FFF6EF</color>
+    <color name="crimson_disabled_bg">#A1FFF6EF</color>
+    <color name="crimson_dark_bg">#DAAB86</color>
 </resources>
